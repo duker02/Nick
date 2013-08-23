@@ -1,0 +1,47 @@
+name: Nick
+version: 1.0
+main: me.legitmodern.Nick.Nick
+softdepend:
+  - TagAPI
+description: "Give yourself a nickname!\n"
+commands:
+  nick:
+    usage: '/<command> <nickname>'
+    aliases:
+      - name
+      - false
+    description: 'Give yourself a nickname!'
+  nickname:
+    usage: '/<command> <args> (use /<command> help for help)'
+    aliases:
+      - nname
+    description: 'Accesses nickname commands (help, reload, off)'
+permissions:
+  nick.nick:
+    description: 'Permission node in order to nickname.'
+    default: op
+  nick.nick.users:
+    description: 'Permission node in order to nickname other users.'
+    default: op
+  nick.nickname.help:
+    description: 'Permission node that displays Nick help panel.'
+    default: op
+  nick.nickname.real:
+    description: 'Permission node in order to show real player names.'
+    default: op
+  nick.nickname.real.others:
+    description: 'Permission node in order to show real player names of other players.'
+    default: op
+  nick.nickname.reload:
+    description: 'Permission node to reload the Nick plugin files.'
+    default: op
+  nick.color:
+    description: 'Permission node to add colors to your nickname.'
+    default: op
+  nick.nickname.off:
+    description: 'Permission node that allows you to turn off your nickname.'
+    default: op
+  nick.admin.disable:
+    description: 'Permission node in order to disable the plugin.'
+    default: op
+    
